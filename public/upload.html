@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Video</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Upload Video</h1>
+  </header>
+  <main>
+    <form id="upload-form">
+      <label for="title">Video Title:</label>
+      <input type="text" id="title" name="title" required>
+      
+      <label for="file">Select Video File:</label>
+      <input type="file" id="file" name="file" accept="video/*" required>
+      
+      <label for="category">Category:</label>
+      <select id="category" name="category" required>
+        <option value="Videos">Videos</option>
+        <option value="Short videos">Short videos</option>
+        <option value="Movies">Movies</option>
+      </select>
+      
+      <button type="submit">Upload</button>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
