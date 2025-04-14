@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Video</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Edit Video</h1>
+  </header>
+  <main>
+    <form id="edit-form">
+      <label for="video-id">Video ID:</label>
+      <input type="text" id="video-id" name="video-id" required>
+      
+      <label for="new-title">New Title:</label>
+      <input type="text" id="new-title" name="new-title">
+      
+      <label for="new-category">New Category:</label>
+      <select id="new-category" name="new-category">
+        <option value="Videos">Videos</option>
+        <option value="Short videos">Short videos</option>
+        <option value="Movies">Movies</option>
+      </select>
+      
+      <button type="submit">Save Changes</button>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
