@@ -1,1 +1,36 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOD Website</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Fluid Player CSS -->
+  <link rel="stylesheet" href="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to VOD Website</h1>
+    <nav>
+      <a href="upload.html">Upload Video</a>
+      <a href="edit.html">Edit Video</a>
+      <a href="subtitle.html">Add Subtitle</a>
+      <a href="share.html">Share Video</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Play Video with VAST Ads</h2>
+      <div class="video-container">
+        <video id="video-player" controls style="width: 100%; max-width: 800px;">
+          <source src="" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+  </main>
+  <!-- Fluid Player JS -->
+  <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
