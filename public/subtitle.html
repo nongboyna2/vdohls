@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Subtitle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Add Subtitle</h1>
+  </header>
+  <main>
+    <form id="subtitle-form">
+      <label for="video-id">Video ID:</label>
+      <input type="text" id="video-id" name="video-id" required>
+      
+      <label for="language">Language:</label>
+      <input type="text" id="language" name="language" placeholder="e.g., English" required>
+      
+      <label for="subtitle-file">Upload Subtitle File:</label>
+      <input type="file" id="subtitle-file" name="subtitle-file" accept=".srt,.vtt" required>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
